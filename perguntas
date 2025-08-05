@@ -1,0 +1,10 @@
+1. Como se cria uma função em Python?
+
+2. Qual a função de um proxy reverso?
+
+3. Para que serve o RabbitMQ?
+
+4. Descreva o fluxo que você entende ser necessário para a entrega de software de uma empresa como a Mulvi/Banesecard respeitando as melhores praticas de DevOps e Segurança
+em um processo de pipeline que se inicia no desenvolvimento do codigo fonte até a implantação do mesmo em produção! 
+
+5. Qual solução ou conjunto de soluções você utilizaria para ter um monitoramento de hardware(CPU, memoria etc...), sistema operacional e aplicações web que rodam em diferentes tipos de workloads como IIS, kubernetes, Apache? Descreva o processo! 
