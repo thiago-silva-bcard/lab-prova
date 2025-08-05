@@ -1,0 +1,24 @@
+INSTRUÇÕES PARA A EXECUÇÃO:
+
+User: lab
+Senha: 123456
+
+Repositorio GIT:
+https://github.com/thiagoaoshi/lab-prova.git
+---------------------------------------------------
+1. Através do terminal disponivel, clone o repositório acima e acesse a pasta lab-prova.
+
+2. Crie e execute um script de nome listagem.sh com bash linux, que crie um arquivo de saida de nome listagem.html,
+contendo nele a listagem do diretorio /var/log filtrando somente a palavra syslog, e que a ultima linha imprima o valor da variavel $PWD, dando-o permissão de execução.
+
+3. Docker - build e run
+    a. Buildar um container do nginx copiando o arquivo "listagem.html" para (/usr/share/nginx/html/index.html), salvar a imagem com nome nginx-custom. (pode-se utilizar o Dockerfile do repositorio como auxilio)
+    b. Rodar um container com a nova imagem expondo a porta 8080 externamente para a porta 80 do container, visualizar a pagina no navegador com as informações geradas no script shell.
+
+4. Kubernetes -
+    a. Criar um namespace de nome frontend
+    b. Através do comando kubectl implantar um pod no namespace de nome "frontend" utilizando o manifesto "criar-pod.yaml" corrigindo qualquer possível erro de execução, e validando se o status é runing!
+    c. executar comando com kubectl para que liste todos os pods do namespace "frontend" em um arquivo de saida de nome "listagem-pods"
+    d. Através do comando kubectl implantar um Deployment no namespace de nome "frontend" utilizando o manifesto "criar-deployment.yaml" corrigindo qualquer possível erro de execução,e aumentando o numero de replicas para 3, e validando se o status é runing!
+
+5. execute um comando que liste os status das portas, conexões e endereços sendo utilizados no sistema operacional, e que salve a saida em um arquivo de nome "status-con". 
